@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    background:#2E9CE6;
+    padding: 0.25em;
+    font-family: fantasy;
+    color:#fff;
+}
+
+.mat-card-title {
+    font-size: 40px;
+}
+
+.mat-card {
+    font-family: fantasy;
+    background-color: wheat;
+}
+
+.mat-tab-group {
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.mat-tab-label {
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+.mat-table, .mat-paginator {
+    font-family: fantasy;
+    font-size: 20px;
+    background:aqua;
+    overflow: auto;
+}
+
+.mat-header-cell {
+    font-size: 20px;
+}
+
+.expense-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+  }
+
+  .mat-header-row { 
+    background-color: tan;
+  }
+
+  .mat-expansion-panel, .mat-expansion-panel-content {
+      background-color: inherit;
+      font-family: inherit;
+      margin: 10px;
+  }
+  
+  .mat-expansion-panel-header {
+      background-color: burlywood;
+      font-family: inherit;
+      margin: 10px;
+  }

@@ -1,0 +1,23 @@
+<p>
+  home works!
+</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis tempore ipsum maxime, sit perferendis alias natus
+  vero rerum aspernatur inventore tempora recusandae porro modi. Sunt tenetur hic deserunt iure.</p>
+
+
+<mat-grid-list cols="9" rowHeight="100px">
+  <mat-grid-tile>
+    <p [ngClass]="{'animated fadeOutLeft':animateMe}" *ngIf="!moved">
+      I can move
+    </p>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-raised-button (click)="animate()" color="primary">Move</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <p [ngClass]="{'animated fadeOutRight':animateMe}" *ngIf="moved">
+      Moved
+    </p>
+  </mat-grid-tile>
+</mat-grid-list>

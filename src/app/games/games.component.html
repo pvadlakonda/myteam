@@ -1,0 +1,30 @@
+<mat-expansion-panel layout *ngFor="let game of games">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <h2>{{game.title}}</h2>
+    </mat-panel-title>
+    <mat-panel-description>
+      <h3>{{game.location}}</h3>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-grid-list cols="6" rowHeight="100px">
+    <mat-grid-tile>
+      <i class="material-icons mat-icon-thumb-up">thumb_up</i>
+      <ul>
+        <li *ngFor="let player of game['yesPlayers']">{{player}}</li>
+      </ul>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <i class="material-icons mat-icon-thumb-down">thumb_down</i>
+      <ul>
+        <li *ngFor="let player of game['noPlayers']">{{player}}</li>
+      </ul>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <i class="material-icons mat-icon-thumb-up-down">thumbs_up_down</i>
+      <ul>
+        <li *ngFor="let player of game['tentativePlayers']">{{player}}</li>
+      </ul>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-expansion-panel>
